@@ -5,7 +5,7 @@ void print(const char* string) {
     int offset = 0;
 
     // VGA Text Structure: [character][colour][character][colour]
-    while (string[i] != "\0") {
+    while (string[i] != '\0') {
         video[offset] = string[i];
         video[offset + 1] = 0x07;
         i++;
